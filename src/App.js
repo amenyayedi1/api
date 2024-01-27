@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState,useEffect } from 'react';
 
-function app(){
+function App(){
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -22,7 +22,6 @@ function app(){
     <div style={{border:'1px solid black'}}> 
       <h3> {el.email} </h3>
     <p> {el.name} </p>
-    <p> {el.adress.street} </p>
     </div>
    )
     }
@@ -31,4 +30,4 @@ function app(){
   );
 }
 
-export default app;
+export default App;
